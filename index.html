@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+   
+</script>
+<style>
+    p {display:inline}
+
+    section{
+        max-width: 1440px;
+        height: 100%;
+        position: relative;
+    }
+    form{
+        display: block;
+        position: relative;
+        height: 100%;
+        left: 52%;
+        top: 50%;
+        transform: translate(0, 100%);
+        margin: 0 auto;
+    }
+</style>
+</head>
+<body>
+    <section>
+    <form  action onsubmit="alert('제출완료')">
+        <span>first name:</span>
+        <br>
+            <input type="text" id="firstName" required>
+        <br>
+        <span>Last name:</span>
+        <br>
+            <input type="text" id="lastName" required>
+        <br>
+        <span>email:</span>
+        <br>
+            <input type="email" id="Email" required>
+        <br>
+        <span>Gender:</span>
+            <input  type="radio" name="Gender" id="Gender" value="남자" required>
+            <label  for="Gender"><p>남자</p>
+            <input  type="radio" name="Gender" id="Gender" value="여자" required >
+            <label  for="Gender"><p>여자</p>
+        <br>
+            <span>Favorite:</span>
+            <input  type="checkbox" name="Favorite" id="Favorite " value="HTML">
+            <label  for="Favorite "><p>HTML</p>
+            <input  type="checkbox" name="Favorite" id="Gender" value="HTML">
+            <label  for="Favorite "><p>JAVA</p>
+            <input  type="checkbox" name="Favorite" id="Gender" value="script">
+            <label  for="Favorite "><p>javascript</p>
+        <br>
+        <span>browser:</span>
+        <select id="browser" name="browser">
+            <option selected>사용하는 브라우저는 무엇인가요?</option>
+            <option value="크롬">크롬</option>
+            <option value="웨일">웨일</option>
+            <option value="엣지">엣지</option>
+            <option value="엣지">사파리</option>
+        </select>
+        <br>
+        <span>birthday:</span>
+        <input type="date" name="birthday">
+        <br>
+        <input type="submit" onclick="submits()" value="제출">
+    </form>
+    </section>
+</body>
+</html>
